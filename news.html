@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Investor News</title>
+    <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Read the daily investment news and subscribe for exclusive content.">
+        <meta name="author" content="Investor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="investment, magazine, news, website, finance, daily, read, subscribe">
+    <!-- End Meta Tags -->
+    <!-- Open Graph -->
+        <meta property="og:title" content="Investor"/>
+        <meta property="og:url" content="index.html"/>
+        <meta property="og:image" content="https://freesvg.org/img/magazine.png"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Read the daily investment news and subscribe for exclusive content."/>
+        <meta property="og:locale" content="en_GB"/>
+    <!-- End Open Graph -->
+    <!-- Script -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/390345ea72.js" crossorigin="anonymous"></script>
+        <script src="script/handlebars-v4.7.6.js"></script>
+        <script src="partials/news.js"></script>
+        <script src="script/banner.js"></script>
+        <script src="script/stickynav.js"></script>
+        <script src="script/burgerNav.js"></script>
+    <!-- End Script -->
+    <!-- Styles -->
+        <link rel="stylesheet" href="css/fonts-colours.css">
+        <link rel="stylesheet" href="css/wide-screen.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    <!-- End Styles -->
+</head>
+<body>
+    <!-- Header -->
+    <section class="top-container-header">
+        <header class="top-header">
+            <a href="index.html" title="Visit Home page">
+                <h1>Investor</h1>
+            </a>
+            <div class="header-text">
+                <p>Always have the advantage of realtime financial news.</p>
+            </div> 
+        </header>
+    </section>
+    <!-- Navigation -->
+    <div id="navheader">
+        <nav class="main-nav">
+            <ul id="navlist">
+                <li id="logo" class="hidden">
+                    <div>
+                        <h4>Investor</h4>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="subscription.html">Subscriptions</a>
+                    <ul class="dropdown">
+                        <li><a href="subscription.html#new-reader">New Reader's Perks</a></li>
+                        <li><a href="subscription.html#subscription-plans">Subscription Plans</a></li>
+                        <li><a href="subscription.html#packages-discounts">Special Offers</a></li>
+                        <li><a href="subscription.html#form">Subscribe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="app.html">App</a>
+                    <ul class="dropdown">
+                        <li><a href="app.html#user-statistics">User Statistics</a></li>
+                        <li><a href="app.html#promo-video">Watch Promo</a></li>
+                        <li><a href="app.html#features-benefits">Features & Benefits</a></li>
+                        <li><a href="app.html#faqs">FAQs</a></li>
+                        <li><a href="app.html#download">Download App</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html#company-statistics">Company Statistics</a></li>
+                        <li><a href="about.html#awards">Awards & Accreditations</a></li>
+                        <li><a href="about.html#our-partners">Our Partners</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span id="mobilelogo"></span>
+            <a class="burger" onclick="navDrop()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+    <!-- Wrapper Starts-->
+    <div class="wrapper">
+        <section id="newsSlideshow" class="hero">
+            <!-- Hero large image section -->
+            <div class="slideContainer newsSlide fade">
+                <h2 class="slideTitle">How can the Whitehouse rebuild what an entire nation has destroyed?</h2>
+            </div>
+            <div class="slideContainer1 newsSlide fade">
+                <h2 class="slideTitle">Are the Olympics over?</h2>
+            </div>
+            <div class="slideContainer2 newsSlide fade">
+                <h2 class="slideTitle">The increasing prices of solar energy</h2>
+            </div>
+            <div class="slideContainer3 newsSlide fade">
+                <h2 class="slideTitle">What replaced gold in 2021</h2>
+            </div>
+            <div class="slideContainer4 newsSlide fade">
+                <h2 class="slideTitle">How Covid caused a boom in medical research investments</h2>
+            </div>
+            <div class="slideContainer5 newsSlide fade">
+                <h2 class="slideTitle">The Turkish currency collapse</h2>
+            </div>
+            <div class="slideContainer6 newsSlide fade">
+                <h2 class="slideTitle">The raging petrol war between Russia and UAE</h2>
+            </div>
+        </section>
+        <!-- News Feed resutls and Filters section -->
+        <section class="news">
+            <h1>Latest News</h1>
+            <div class="boxes">
+                <div class="filter-box">
+                    <h2>News Filters</h2>
+                    <div>
+                        <input title="Choose news category" class="tickbox" type="checkbox" name="filter" value="governmentnews">
+                        <p class="filter-name">Government</p>
+                    </div>
+                    <div>
+                        <input title="Choose news category" class="tickbox" type="checkbox" name="filter" value="investmentnews">
+                        <p class="filter-name">Investment</p>
+                    </div>
+                    <div>
+                        <input title="Choose news category" class="tickbox" type="checkbox" name="filter" value="technews">
+                        <p class="filter-name">Technology</p>
+                    </div>
+                    <div>
+                        <input title="Choose news category" class="tickbox" type="checkbox" name="filter" value="agrinews">
+                        <p class="filter-name">Agricultural</p>
+                    </div>
+                    <div>
+                        <input title="Choose news category" class="tickbox" type="checkbox" name="filter" value="greennews">
+                        <p class="filter-name">Green investment</p>
+                    </div>
+                    <input title="Apply filters and get news" class="filter-btn" type="button" id="Submit" value="Apply filters">
+                </div>
+            </div>
+            <div class="news-boxes">
+                <div class="investment-news">
+                    <script id="investment-news" type="template/handlebars">
+                        {{#each articles}}
+                            <div class="investment-news-box" onclick="openArticle()">
+                                {{{image}}}
+                                <!-- tripple brackets escape the img tag and uses it as html -->
+                                <div class="copy">
+                                    <h3>{{title}}</h3>
+                                    <p>{{description}}</p>
+                                    <p>{{date}}</p>
+                                    <span class="tooltiptext">Read article</span>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </script>
+                </div>
+                <div class="government-news">
+                    <script id="government-news" type="template/handlebars">
+                        {{#each articles}}
+                            <div class="government-news-box" onclick="openArticle()">
+                                {{{image}}}
+                                <!-- tripple brackets escape the img tag and uses it as html -->
+                                <div class="copy">
+                                    <h3>{{title}}</h3>
+                                    <p>{{description}}</p>
+                                    <p>{{date}}</p>
+                                    <span class="tooltiptext">Read article</span>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </script>
+                </div>
+                <div class="technology-news">
+                    <script id="technology-news" type="template/handlebars">
+                        {{#each articles}}
+                            <div class="technology-news-box" onclick="openArticle()">
+                                {{{image}}}
+                                <!-- tripple brackets escape the img tag and uses it as html -->
+                                <div class="copy">
+                                    <h3>{{title}}</h3>
+                                    <p>{{description}}</p>
+                                    <p>{{date}}</p>
+                                    <span class="tooltiptext">Read article</span>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </script>
+                </div>
+                <div class="agriculture-news">
+                    <script id="agriculture-news" type="template/handlebars">
+                        {{#each articles}}
+                            <div class="agriculture-news-box" onclick="openArticle()">
+                                {{{image}}}
+                                <!-- tripple brackets escape the img tag and uses it as html -->
+                                <div class="copy">
+                                    <h3>{{title}}</h3>
+                                    <p>{{description}}</p>
+                                    <p>{{date}}</p>
+                                    <span class="tooltiptext">Read article</span>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </script>
+                </div>
+                <div class="green-news">
+                    <script id="green-news" type="template/handlebars">
+                        {{#each articles}}
+                            <div class="green-news-box" onclick="openArticle()">
+                                {{{image}}}
+                                <!-- tripple brackets escape the img tag and uses it as html -->
+                                <div class="copy">
+                                    <h3>{{title}}</h3>
+                                    <p>{{description}}</p>
+                                    <p>{{date}}</p>
+                                    <span class="tooltiptext">Read article</span>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </script>
+                </div>
+            </div>
+            <script> 
+                compileFilteredNews(); 
+                function openArticle()
+                {
+                    alert ("To read this article, please subscribe to our Investor plans.");
+                    window.location = "subscription.html#form";
+                }
+            </script>
+        </section>
+    </div>
+    <!-- Wrapper Ends-->
+    <footer>
+        <div class="footerinner">
+            <!--Address of central office -->
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="subscription.html">Subscriptions</a>
+                    </li>
+                    <li>
+                        <a href="app.html">App</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="report.html" title="Read reflective report">Website report</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Contact info-->
+            <div class="footer-contact">
+                <ul>
+                    <li>
+                        <p><b>Email: </b><a href="mailto:someone@example.com" title="Get in touch">accountmanagement@investor.ac.uk</a></p>
+                    </li>
+                    <li>
+                        <p><b>Tel: </b><a href="tel:(+44)01-345-678-99" title="Get in touch">0123456789</a></p>
+                    </li>
+                    <li>
+                        <address>The Investor Building, 88 Brecknock Rd, Kentish Town, London N7 0DB, UK</address>
+                    </li>
+                </ul>
+            </div>
+            <!--Social Media links-->
+            <div class="footer-social">
+                <p>Would you like to be notified when a hot topic comes up?</p>
+                <p>Or check out our professional photographers' work?</p>
+                <p><b>Follow us on social media!</b></p>
+                <a href="https://www.facebook.com/investor/" target="_blank" title="Facebook page">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.twitter.com/investor" target="_blank" title="Twitter page">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/investor" target="_blank" title="LinkedIn page">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.reddit.com/investor" target="_blank" title="Reddit page">
+                    <i class="fab fa-reddit-square"></i>
+                </a>
+                <a href="https://www.pinterest.com/investor" target="_blank" title="Pinterest page">
+                    <i class="fab fa-pinterest-square"></i>
+                </a>
+                <a href="https://www.instagram.com/investor" target="_blank" title="Instagram page">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <!--Copyright text-->
+              <div class="copyright">
+                <p>&#169; 2021 WP0987</p>
+                <!--Copyright unicode html from https://www.compart.com/en/unicode/U+00A9 -->
+            </div>
+        </div> 
+    </footer>
+</body>   
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Investor News</title>
+        <!-- Meta Tags -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="description" content="Read the daily investment news and subscribe for exclusive content.">
+            <meta name="author" content="Investor">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="keywords" content="investment, magazine, news, website, finance, daily, read, subscribe">
+        <!-- End Meta Tags -->
+        <!-- Open Graph -->
+            <meta property="og:title" content="Investor"/>
+            <meta property="og:url" content="index.html"/>
+            <meta property="og:image" content="https://freesvg.org/img/magazine.png"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:description" content="Read the daily investment news and subscribe for exclusive content."/>
+            <meta property="og:locale" content="en_GB"/>
+        <!-- End Open Graph -->
+        <!-- Script -->
+            <script
+                src="https://code.jquery.com/jquery-3.5.1.js"
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+                crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/390345ea72.js" crossorigin="anonymous"></script>
+            <script src="script/stickynav.js"></script>
+            <script src="script/carousel.js"></script>
+            <script src="script/burgerNav.js"></script>
+        <!-- End Script -->
+        <!-- Styles -->
+            <link rel="stylesheet" href="css/fonts-colours.css">
+            <link rel="stylesheet" href="css/wide-screen.css">
+            <link rel="stylesheet" href="css/desktop.css">
+            <link rel="stylesheet" href="css/tablet.css">
+            <link rel="stylesheet" href="css/mobile.css">
+        <!-- End Styles -->
+    </head>
+<body>
+    <!-- Header -->
+    <section class="top-container-header">
+        <header class="top-header">
+            
+            <a href="index.html" title="Visit Home page">
+                <h1>Investor</h1>
+            </a>
+            <div class="header-text">
+                <p>Always have the advantage of realtime financial news.</p>
+            </div> 
+        </header>
+    </section>
+    <!-- Navigation -->
+    <div id="navheader">
+        <nav class="main-nav">
+            <ul id="navlist">
+                <li id="logo" class="hidden">
+                    <div>
+                        <h4>Investor</h4>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="subscription.html">Subscriptions</a>
+                    <ul class="dropdown">
+                        <li><a href="subscription.html#new-reader">New Reader's Perks</a></li>
+                        <li><a href="subscription.html#subscription-plans">Subscription Plans</a></li>
+                        <li><a href="subscription.html#packages-discounts">Special Offers</a></li>
+                        <li><a href="subscription.html#subscriptions-form">Subscribe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="app.html">App</a>
+                    <ul class="dropdown">
+                        <li><a href="app.html#user-statistics">User Statistics</a></li>
+                        <li><a href="app.html#promo-video">Watch Promo</a></li>
+                        <li><a href="app.html#features-benefits">Features & Benefits</a></li>
+                        <li><a href="app.html#faqs">FAQs</a></li>
+                        <li><a href="app.html#download">Download App</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html#company-statistics">Company Statistics</a></li>
+                        <li><a href="about.html#awards">Awards & Accreditations</a></li>
+                        <li><a href="about.html#our-partners">Our Partners</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span id="mobilelogo"></span>
+            <a class="burger" onclick="navDrop()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+    <!-- Wrapper Starts-->
+    <div class="wrapper">
+        <!-- Subscriptions Header -->
+        <section class="subscriptions-container">
+            <header class="subscriptions-header">
+                <h1>Subscription plans</h1>
+                <p>Join more than 7 million subscribers who benefit from our analysis and research in the financial markets.</p>
+                <h2>Why choose us?</h2>
+                <p>We believe in the individual, market and intellectual freedoms that power human progress.
+                    <br>Since 1960 we have guarded these liberal values as we cover the world’s most important stories. Our expert in-depth analysis and thought-provoking opinion are essential reading for more than one million subscribers worldwide.
+                </p>
+            </header>
+        </section>
+        <!-- Prize Draw Container -->
+        <section class="prize-container">
+            <div class="prize">
+                <h2>Weekly prize draw</h2>
+                <p>Become a regular reader and get the chance to win amazing prizes.</p>
+                <a href="#form" class="btn" title="Go to form">Subscribe now</a>
+            </div>
+        </section>
+        <!-- New Readers section -->
+        <a id="new-reader"></a>
+        <section class="newreader-container">
+            <div class="plans-heading">
+                <h2>Subscription plans</h2>
+            </div>
+            <div class="newreader-image"></div>
+            <div class="newreader-text">
+                <h3>Become a new reader</h3>
+                <h4>Perks:</h4>
+                <ul>
+                    <li>50% discount for first 12 weeks.</li>
+                    <li>Participate in weekly prize draw.</li>
+                    <li>Receive a branded magazine pen and notebook.</li>
+                    <li>Register on our mobile app and read wherever you are.</li>
+                </ul>
+                <a href="#form" class="btn" title="Go to form">Subscribe now</a>
+            </div>
+        </section>
+        <!-- PaymentPlans -->
+        <a id="subscription-plans"></a>
+        <section class="plans-container">
+            <div class="digital-only">
+                <h2>Digital plan</h2>
+                <div class="plans-left">
+                    <p>This plan is for those of you who prefer reading off a screen and prefer going paperless.</p>
+                    <i class="fas fa-laptop"></i>
+                    <!-- <img src="images/subscriptions/digital-plan.jpg" alt="Digital plan"> -->
+                </div>
+                <div class="plans-right">
+                    <ul>
+                        <li>Investor.com account</li>
+                        <li>Investor app account</li>
+                        <li>Audio reader version</li>
+                        <li>Daily podcasts</li>
+                        <li>Opt out anytime</li>
+                    </ul>
+                    <a href="#form" class="btn" title="Go to form">Get in touch</a>
+                </div>
+            </div>
+            <div class="digital-paper">
+                 <h2>Digital & Paper plan</h2>
+                <div class="plans-left">
+                    <p>This plan meets the needs of any reader as you get our hardcopy delivered every week to your address, whilst also having the full digital access to the website and the Investor app.</p>
+                    <i class="far fa-newspaper"></i>
+                </div>
+                <div class="plans-right">
+                    <ul>
+                        <li>Weekly hardcopy delivered</li>
+                        <li>Monthly magazine with financial specialists interviews</li>
+                        <li>Option to opt in for visually impaired paper version</li>
+                        <li>Investor.com account</li>
+                        <li>Investor app account</li>
+                        <li>Audio reader version</li>
+                        <li>Daily podcasts</li>
+                        <li>Opt out anytime</li>
+                    </ul>
+                    <a href="#form" class="btn" title="Go to form">Get in touch</a>
+                </div>
+            </div>
+        </section>
+        <!-- Packages and Discounts -->
+        <a id="packages-discounts"></a>
+        <section class="package-container">
+            <div class="package-heading">
+                <h2>Special Offers</h2>
+            </div>
+            <div class="package-main">
+                <h3>Family package</h3>
+                <p>An access code that can be shared by several linked accounts.</p>
+                <p>Share the price but have your own news preference filters in your own account.</p>
+                <p class="price">19.99 $ / Month</p>
+                <a href="#form" class="btn" title="Go to form">Subscribe now</a>
+            </div>
+            <div class="package-box package-box-a">
+                <h4>Student package</h4>
+                <p class="price">9.99 $ / Month</p>
+                <p>Support your studies with our whitepapers and analytical studies.</p>
+                <a href="#form" class="btn" title="Go to form">Subscribe now</a>
+            </div>
+            <div class="package-box package-box-b">
+                <h4>Retirement package</h4>
+                <p class="price">Free!</p>
+                <p>We support our elderly. Our digital plans are entirely FREE for people aged 65+</p>
+                <a href="#form" class="btn" title="Go to form">Subscribe now</a>
+            </div>
+        </section>
+        <!-- Customer Quotes carousel -->
+        <a id="customer-quotes"></a>
+        <section id="quote-carousel">
+            <div class="heading">
+                <h2>Customer Testimonials</h2>
+            </div>
+            <div class="wrapper">
+                <!-- Carousel Slides -->
+                <div class="slide fadeIn show">
+                    <div class="quote-box">
+                        <img src="images/subscriptions/javier.jpeg" alt="Javier Rodriguez photo">
+                        <div>
+                            <h3>Javier Rodriguez</h3>
+                            <h4>Foreign Trade Economics Lecturer at University of London</h4>
+                            <blockquote>"I am really impressed with the research and analysis that the Investor team conducts. The quality and accuracy of the articles are at quite a high level. I always try to recommend the Investor to my students whenever they exhibit a willing to read more outside of university. I also admire all the publisheing awards that the Investor has, further strengthening my opinion of how special their work is."</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide fadeIn">
+                    <div class="quote-box">
+                        <img src="images/subscriptions/laura.jpeg" alt="Laura Palmer photo">
+                        <div>
+                            <h3>Laura Palmer</h3>
+                            <h4>Head of Creative & Design at the Vagabond Magazine Company</h4>
+                            <blockquote>"Working in the area of creative and design, I can easily say that the Investor website and app are designed in a really well accessible way, providing easy navigation to me as a user and a great choice of articles to read from. I guess it might be from my area of work, but I always get upset when I visit websites or read magazines that have an aweful layout and are hard to understand. However, the Investor is definitely not one of those and is always pleasant on the eye when I open up the new weekly edition."</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide fadeIn">
+                    <div class="quote-box">
+                        <img src="images/subscriptions/andrea.jpeg" alt="Andrea Giovanni photo">
+                        <div>
+                            <h3>Andrea Giovanni</h3>
+                            <h4>MSc Finance student at Coventry University</h4>
+                            <blockquote>"As a Master's degree student in Finance, it is a must-have to buy and read as much as external literature as possible that has to do with what I study. It is entirely one thing to learn the theory at university, and another thing to read global affairs in the financial world as this theory happens in the real world. The Investor is an absolute helper in my studies. Additionally, I really enjoy is that the Investor has digital plans so that I don't need to carry around magazines and I can always open up the app to read the latest news."</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide fadeIn">
+                    <div class="quote-box">
+                        <img src="images/subscriptions/samantha.jpeg" alt="Samantha Richards photo">
+                        <div>
+                            <h3>Samantha Richards</h3>
+                            <h4>Founder of the "Elders know better" trust</h4>
+                            <blockquote>"At the "Elders know better" trust, we have many people in retirement that enjoy reading any type of magazines, even financial ones like the Investor. What I really grew attached to when it comes to subscribing to the Investor, is the ability of the app to read aloud the article that is selected. That way the elderly here can listen to the device rather than struggle to read from the screen. An amazing, and I emphasize, an amazing thing about the Investor is the option to replace the regular magazine for a one that is printed for people with visual impairments. There is no match for that!"</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel buttons -->
+                <a class="previous" onclick="nextSlide(-1)"> &#10094; </a>
+                <a class="next" onclick="nextSlide(1)"> &#10095; </a>
+                <!-- Dots -->
+                <div class="dotContainer">
+                    <span class="dot active" onclick="selectSlide(1)"></span>
+                    <span class="dot" onclick="selectSlide(2)"></span>
+                    <span class="dot" onclick="selectSlide(3)"></span>
+                    <span class="dot" onclick="selectSlide(4)"></span>
+                </div>
+            </div>
+        </section>
+        <!-- App section -->
+        <a id="subscriptions-form"></a>
+        <section class="form">
+            <form>
+                <h3>Simply fill in your details below and we will be in touch with you shortly.</h3>
+                <label>First name:</label><br>
+                <input type="text" value="First name"><br>
+                <label>Last name:</label><br>
+                <input type="text" value="Last name"><br>
+                <label>Email:</label><br>
+                <input type="text" value="youremail@email.ac.uk"><br>
+                <label>Address:</label><br>
+                <input type="text" value="House number, Post code, Town, Country"><br>
+                <label>Telephone:</label><br>
+                <input type="text" value="+(country code) 000 000 000 00"><br><br>
+                <input value="Subscribe" class="formbtn" onclick="formSubmit()" title="Submit form">
+            </form>
+            <script> 
+                function formSubmit()
+                {
+                    alert ("Thank you. Our teams will be in touch with you shortly.");
+                    window.location = "index.html";
+                }
+            </script> 
+        </section>
+        <!-- App section -->
+        <section class="app-strip">
+            <img src="images/appshot.png" alt="Investor App">
+            <div>
+                <h2>Download the Investor mobile app for FREE!</h2>
+                <p>We have now released our mobile application suited for all devices. Register via the app and get access to your daily news everywhere ont he spot.</p>
+                <a href="app.html" class="btn" title="Visit App page">Learn more</a>
+            </div>
+        </section>
+    </div>
+    <!-- Wrapper Ends-->
+    <footer>
+        <div class="footerinner">
+            <!--Address of central office -->
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="subscription.html">Subscriptions</a>
+                    </li>
+                    <li>
+                        <a href="app.html">App</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="report.html" title="Read reflective report">Website report</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Contact info-->
+            <div class="footer-contact">
+                <ul>
+                    <li>
+                        <p><b>Email: </b><a href="mailto:someone@example.com" title="Get in touch">accountmanagement@investor.ac.uk</a></p>
+                    </li>
+                    <li>
+                        <p><b>Tel: </b><a href="tel:(+44)01-345-678-99" title="Get in touch">0123456789</a></p>
+                    </li>
+                    <li>
+                        <address>The Investor Building, 88 Brecknock Rd, Kentish Town, London N7 0DB, UK</address>
+                    </li>
+                </ul>
+            </div>
+            <!--Social Media links-->
+            <div id="form" class="footer-social">
+                <p>Would you like to be notified when a hot topic comes up?</p>
+                <p>Or check out our professional photographers' work?</p>
+                <p><b>Follow us on social media!</b></p>
+                <a href="https://www.facebook.com/investor/" target="_blank" title="Facebook page">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.twitter.com/investor" target="_blank" title="Twitter page">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/investor" target="_blank" title="LinkedIn page">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.reddit.com/investor" target="_blank" title="Reddit page">
+                    <i class="fab fa-reddit-square"></i>
+                </a>
+                <a href="https://www.pinterest.com/investor" target="_blank" title="Pinterest page">
+                    <i class="fab fa-pinterest-square"></i>
+                </a>
+                <a href="https://www.instagram.com/investor" target="_blank" title="Instagram page">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <!--Copyright text-->
+              <div class="copyright">
+                <p>&#169; 2021 WP0987</p>
+                <!--Copyright unicode html from https://www.compart.com/en/unicode/U+00A9 -->
+            </div>
+        </div> 
+    </footer>
+</body>   
+</html>

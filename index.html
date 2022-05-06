@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Investor News</title>
+    <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Read the daily investment news and subscribe for exclusive content.">
+        <meta name="author" content="Investor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="investment, magazine, news, website, finance, daily, read, subscribe">
+    <!-- End Meta Tags -->
+    <!-- Open Graph -->
+        <meta property="og:title" content="Investor"/>
+        <meta property="og:url" content="index.html"/>
+        <meta property="og:image" content="https://freesvg.org/img/magazine.png"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Read the daily investment news and subscribe for exclusive content."/>
+        <meta property="og:locale" content="en_GB"/>
+    <!-- End Open Graph -->
+    <!-- Script -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/390345ea72.js" crossorigin="anonymous"></script>
+        <script src="script/stickynav.js"></script>
+        <script src="script/carousel.js"></script>
+        <script src="script/burgerNav.js"></script>
+    <!-- End Script -->
+    <!-- Styles -->
+        <link rel="stylesheet" href="css/fonts-colours.css">
+        <link rel="stylesheet" href="css/wide-screen.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    <!-- End Styles -->
+</head>
+<body>
+    <!-- Header -->
+    <section class="top-container-header">
+        <header class="top-header">
+            <a href="index.html" title="Visit Home page">
+                <h1>Investor</h1>
+            </a>
+            <div class="header-text">
+                <p>Always have the advantage of realtime financial news.</p>
+            </div> 
+        </header>
+    </section>
+    <!-- Nav -->
+    <div id="navheader">
+        <nav class="main-nav">
+            <ul id="navlist">
+                <li id="logo" class="hidden">
+                    <div>
+                        <h4>Investor</h4>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="subscription.html">Subscriptions</a>
+                    <ul class="dropdown">
+                        <li><a href="subscription.html#new-reader">New Reader's Perks</a></li>
+                        <li><a href="subscription.html#subscription-plans">Subscription Plans</a></li>
+                        <li><a href="subscription.html#packages-discounts">Special Offers</a></li>
+                        <li><a href="subscription.html#form">Subscribe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="app.html">App</a>
+                    <ul class="dropdown">
+                        <li><a href="app.html#user-statistics">User Statistics</a></li>
+                        <li><a href="app.html#promo-video">Watch Promo</a></li>
+                        <li><a href="app.html#features-benefits">Features & Benefits</a></li>
+                        <li><a href="app.html#faqs">FAQs</a></li>
+                        <li><a href="app.html#download">Download App</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html#company-statistics">Company Statistics</a></li>
+                        <li><a href="about.html#awards">Awards & Accreditations</a></li>
+                        <li><a href="about.html#our-partners">Our Partners</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span id="mobilelogo"></span>
+            <a class="burger" onclick="navDrop()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+    <!-- Wrapper Starts-->
+    <div class="wrapper">
+        <section id="news-carousel">
+            <!-- Special events carousel -->
+            <div class="heading">
+                <h2>Top rated topics this week</h2>
+            </div>
+            <div class="wrapper">
+                <!-- Carousel Slides -->
+                <div class="slide fadeIn show">
+                    <a href="news.html" title="Visit News page">
+                        <h3>How Covid caused a boom in medical research investments</h3>
+                    </a>
+                    <img src="images/carousel/covidbanner.jpeg" alt="How Covid caused a boom in medical research investments" title="How Covid caused a boom in medical research investments">
+                </div>
+                <div class="slide fadeIn">
+                    <div class="slideText">
+                        <a href="news.html" title="Visit News page">
+                            <h3>Which flight companies received a government vaccine against the Covid recession?</h3>
+                        </a>
+                    </div>
+                    <img src="images/carousel/flights.jpeg" alt="Which flight companies received a government vaccine against the Covid recession?" title="Which flight companies received a government vaccine against the Covid recession?">
+                </div>
+                <div class="slide fadeIn">
+                    <div class="slideText">
+                        <a href="news.html" title="Visit News page">
+                            <h3>The raging petrol war between Russia and UAE</h3>
+                        </a>
+                    </div>
+                    <img src="images/carousel/petrolpump.jpeg" alt="The raging petrol war between Russia and UAE" title="The raging petrol war between Russia and UAE">
+                </div>
+                <div class="slide fadeIn">
+                    <div class="slideText">
+                        <a href="news.html" title="Visit News page">
+                            <h3>SpaceX stock prices blasted off to space</h3>
+                        </a>
+                    </div>
+                    <img src="images/carousel/spacex.jpg" alt="SpaceX stock prices blasted off to space" title="SpaceX stock prices blasted off to space">
+                </div>
+                <div class="slide fadeIn">
+                    <div class="slideText">
+                        <a href="news.html" title="Visit News page">
+                            <h3>Did Tesla's decision to utilise Bitcoin do more harm than good?</h3>
+                        </a>
+                    </div>
+                    <img src="images/carousel/cryptoBanner.jpeg" alt="Did Tesla's decision to utilise Bitcoin do more harm than good?" title="Did Tesla's decision to utilise Bitcoin do more harm than good?">
+                </div>
+                <!-- Carousel buttons -->
+                <a class="previous" onclick="nextSlide(-1)"> &#10094; </a>
+                <a class="next" onclick="nextSlide(1)"> &#10095; </a>
+                <!-- Dots -->
+                <div class="dotContainer">
+                    <span class="dot active" onclick="selectSlide(1)"></span>
+                    <span class="dot" onclick="selectSlide(2)"></span>
+                    <span class="dot" onclick="selectSlide(3)"></span>
+                    <span class="dot" onclick="selectSlide(4)"></span>
+                    <span class="dot" onclick="selectSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+        <!-- Stats section -->
+        <section class="home-stat">
+            <div class="home-statbox-1">
+                <i class="fas fa-glasses"></i>
+                <h3>7 million</h3>
+                <p>readers in the UK.</p>
+            </div>
+            <div class="home-statbox-2">
+                <i class="fas fa-book-open"></i>
+                <h3>400 million</h3>
+                <p>copies printed and distributed a year.</p>
+            </div>
+            <div class="home-statbox-3">
+                <i class="fas fa-award"></i>
+                <h3>1st</h3>
+                <p>when it comes to financial news coverage.</p>
+            </div>
+        </section>
+        <!-- Redirect Blocks  -->
+        <section class="site-blocks-container">
+            <div class="priority-one">
+                <h3>The Latest News</h3>
+                <p>Read the latest global affairs that affect the financial <br>state of the markets.</p>
+                <a href="news.html" class="btn" title="Visit News page">Read more</a>
+            </div>
+            <div class="priority-two p2-box-a">
+                <h4>Subscription Plans</h4>
+                <p class="descr">Check out our variety of plans to read the Investor daily,<br> some of which are FREE!</p>
+                <a href="subscription.html" class="btn" title="Visit Subscriptions page">Learn more</a>
+            </div>
+            <div class="priority-two p2-box-b">
+                <h4>New careers</h4>
+                <p class="descr">Kickstart your career<br> with our 2021 Investor analyst and writers intake.</p>
+                <a href="mailto:someone@example.com" class="btn" title="Get in touch">Get in touch</a>
+            </div>
+        </section>
+        <!-- Our Partners section -->
+        <section class="partners">
+            <h3>Our Partners</h3>
+            <div class="partners">
+                <img src="images/partners/capitaldotcom.png" alt="Capital logo">
+                <img src="images/partners/etoro.png" alt="eToro logo">
+                <img src="images/partners/europeaninvestmentfund.jpg" alt="EIF logo">
+                <img src="images/partners/financialtimes.jpg" alt="Financial Times logo">
+                <img src="images/partners/frankfurt.jpg" alt="Frankfurt logo">
+                <img src="images/partners/londonstockexchange.png" alt="London Stock Exchange logo">
+                <img src="images/partners/marketwatch.png" alt="Market Watch logo">
+                <img src="images/partners/newzealandmanagement.png" alt="New Zealand Management logo">
+                <img src="images/partners/oxfordinvestmentconsultants.jpg" alt="Oxford Investment Consultants logo">
+                <img src="images/partners/americanfinancialgroup.png" alt="American Financial group logo">
+            </div>
+        </section>
+        <!-- App section -->
+        <section class="app-strip">
+            <img src="images/appshot.png" alt="Investor App">
+            <div>
+                <h2>Download the Investor mobile app for FREE!</h2>
+                <p>We have now released our mobile application suited for all devices. Register via the app and get access to your daily news everywhere ont he spot.</p>
+                <a href="app.html" class="btn" title="Visit App page">Learn more</a>
+            </div>
+        </section>
+    </div>
+    <!-- Wrapper Ends-->
+    <footer>
+        <div class="footerinner">
+            <!--Address of central office -->
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="subscription.html">Subscriptions</a>
+                    </li>
+                    <li>
+                        <a href="app.html">App</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="report.html" title="Read reflective report">Website report</a>
+                    </li>
+                </ul>  
+            </div>
+            <!--Contact info-->
+            <div class="footer-contact">
+                <ul>
+                    <li>
+                        <p><b>Email: </b><a href="mailto:someone@example.com" title="Get in touch">accountmanagement@investor.ac.uk</a></p>
+                    </li>
+                    <li>
+                        <p><b>Tel: </b><a href="tel:(+44)01-345-678-99" title="Get in touch">0123456789</a></p>
+                    </li>
+                    <li>
+                        <address>The Investor Building, 88 Brecknock Rd, Kentish Town, London N7 0DB, UK</address>
+                    </li>
+                </ul>
+            </div>
+            <!--Social Media links-->
+            <div class="footer-social">
+                <p>Would you like to be notified when a hot topic comes up?</p>
+                <p>Or check out our professional photographers' work?</p>
+                <p><b>Follow us on social media!</b></p>
+                <a href="https://www.facebook.com/investor/" target="_blank" title="Facebook page">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.twitter.com/investor" target="_blank" title="Twitter page">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/investor" target="_blank" title="LinkedIn page">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.reddit.com/investor" target="_blank" title="Reddit page">
+                    <i class="fab fa-reddit-square"></i>
+                </a>
+                <a href="https://www.pinterest.com/investor" target="_blank" title="Pinterest page">
+                    <i class="fab fa-pinterest-square"></i>
+                </a>
+                <a href="https://www.instagram.com/investor" target="_blank" title="Instagram page">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <!--Copyright text-->
+              <div class="copyright">
+                <p>&#169; 2021 WP0987</p>
+                <!--Copyright unicode html from https://www.compart.com/en/unicode/U+00A9 -->
+            </div>
+        </div> 
+    </footer>
+</body>   
+</html>

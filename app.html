@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Investor News</title>
+        <!-- Meta Tags -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="description" content="Read the daily investment news and subscribe for exclusive content.">
+            <meta name="author" content="Investor">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="keywords" content="investment, magazine, news, website, finance, daily, read, subscribe">
+        <!-- End Meta Tags -->
+        <!-- Open Graph -->
+            <meta property="og:title" content="Investor"/>
+            <meta property="og:url" content="index.html"/>
+            <meta property="og:image" content="https://freesvg.org/img/magazine.png"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:description" content="Read the daily investment news and subscribe for exclusive content."/>
+            <meta property="og:locale" content="en_GB"/>
+        <!-- End Open Graph -->
+        <!-- Script -->
+            <script
+                src="https://code.jquery.com/jquery-3.5.1.js"
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+                crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/390345ea72.js" crossorigin="anonymous"></script>
+            <script src="script/stickynav.js"></script>
+            <script src="script/accordion.js"></script>
+            <script src="script/burgerNav.js"></script>
+        <!-- End Script -->
+        <!-- Styles -->
+            <link rel="stylesheet" href="css/fonts-colours.css">
+            <link rel="stylesheet" href="css/wide-screen.css">
+            <link rel="stylesheet" href="css/desktop.css">
+            <link rel="stylesheet" href="css/tablet.css">
+            <link rel="stylesheet" href="css/mobile.css">
+        <!-- End Styles -->
+    </head>
+<body>
+    <!-- Header -->
+    <section class="top-container-header">
+        <header class="top-header">
+            <a href="index.html" title="Visit Home page">
+                <h1>Investor</h1>
+            </a>
+            <div class="header-text">
+                <p>Always have the advantage of realtime financial news.</p>
+            </div> 
+        </header>
+    </section>
+    <!-- Navigation -->
+    <div id="navheader">
+        <nav class="main-nav">
+            <ul id="navlist">
+                <li id="logo" class="hidden">
+                    <div>
+                        <h4>Investor</h4>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="subscription.html">Subscriptions</a>
+                    <ul class="dropdown">
+                        <li><a href="subscription.html#new-reader">New Reader's Perks</a></li>
+                        <li><a href="subscription.html#subscription-plans">Subscription Plans</a></li>
+                        <li><a href="subscription.html#packages-discounts">Special Offers</a></li>
+                        <li><a href="subscription.html#form">Subscribe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="app.html">App</a>
+                    <ul class="dropdown">
+                        <li><a href="app.html#user-statistics">User Statistics</a></li>
+                        <li><a href="app.html#promo-video">Watch Promo</a></li>
+                        <li><a href="app.html#features-benefits">Features & Benefits</a></li>
+                        <li><a href="app.html#faqs">FAQs</a></li>
+                        <li><a href="app.html#download">Download App</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html#company-statistics">Company Statistics</a></li>
+                        <li><a href="about.html#awards">Awards & Accreditations</a></li>
+                        <li><a href="about.html#our-partners">Our Partners</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span id="mobilelogo"></span>
+            <a class="burger" onclick="navDrop()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+    <!-- Wrapper Starts-->
+    <div class="wrapper">
+        <!-- Header -->
+        <section class="top-container-about">
+            <header class="top-app-header">
+                <h1>Go paperless</h1>
+                <p>The new Investor app is now available for all iOS and Android devices. Always have an edge on the financial news. Have all the information you need at your disposal in your pocket.</p>
+            </header>
+        </section>
+        <!-- App Header -->
+        <section class="second-container-app">
+            <header class="app-header">
+                <h2>Download our new Investor mobile app</h2>
+                <p>Be up to date with the latest news wherever you are.</p>
+                <a href="#download" class="btn" title="Go to download section">Download now</a>
+            </header>
+        </section>
+         <!-- Stats section -->
+         <a id="user-statistics"></a>
+         <section class="app-stat-strap">
+            <div class="stat-box-1">
+                <i class="fas fa-tablet-alt"></i>
+                <h3>77%</h3>
+                <p>of our readers are already using the app.</p>
+            </div>
+            <div class="stat-box-2">
+                <i class="fas fa-mobile"></i>
+                <h3>60%</h3>
+                <p>of users say they prefer mobile over desktop.</p>
+            </div>
+            <div class="stat-box-3">
+                <i class="fas fa-headset"></i>
+                <h3>24/7</h3>
+                <p>support from our teams if you need help.</p>
+            </div>
+         </section>
+        <!-- Promo video section -->
+        <a id="promo-video"></a>
+        <section class="promo-container">
+            <div class="promo">
+                <h3>Investor Mobile App Promo</h3>
+                <p>Watch a video review of the new Investor mobile app of our financial news platform.</p>
+                <div class="iframecontainer">
+                    <iframe src="https://www.youtube.com/embed/s_meX29nm88" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- App features section -->
+        <a id="features-benefits"></a>
+        <section class="app-features">
+            <div class="heading-container">
+                <h2>Features & Benefits</h2>
+            </div>
+            <div class="app-features-image-1"></div>
+            <div class="app-features-text-1">
+                <h3>App features</h3>
+                <ul>
+                    <li>Ongoing Evolution of the App</li>
+                    <li>Cross-device OS coverage</li>
+                    <li>Regular security updates</li>
+                    <li>Interoperability with modern connectivity standards</li>
+                    <li>Offline functionality
+                        <p>It is natural that most apps will require an internet connection to work fully. However, the Investor app will work offline as well, it simply loads up and saves the latest news whenever you're connected to the web.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="app-features-text-2">
+                <ul>
+                    <li>Search options
+                        <p>You’re all probably familiar with the basic search function that goes with any news-related app. You enter the details of your desired topic and it pulls up the most relevant results in a doc or pdf format. We value our readers' time so we try to minimise it being spent on searching for the right article.</p>
+                    </li>
+                    <li>Bright & Night colour schemes
+                        <p>Our application also has a Night reader interface option which is specially made for those night owl that prefer reading in the dark. This colour pallete will make it easy on the eyes to read at night.</p>
+                    </li>
+                    <li>Push notifications</li>
+                    <li>User feedback</li>
+                </ul>
+                <a href="#download" class="btn" title="Go to download section">Download app</a>
+            </div>
+            <div class="app-features-image-2"></div>
+            <div class="app-features-image-3"></div>
+            <div class="app-features-text-3">
+                <h3>Benefits</h3>
+                <ul>
+                    <li class="right"><i class="fas fa-tachometer-alt"></i>Speed and flexibility.</li>
+                    <li class="mid-left">24/7 support team.<i class="fas fa-info"></i></li>
+                    <li class="mid-right"><i class="fas fa-users"></i>Use same account access on multiple devices when using one of our Family subscription plans.</li>
+                    <li class="left">Simplicity in design for better readibility.<i class="fas fa-palette"></i></li>
+                </ul>
+            </div>
+        </section>
+        <!-- FAQ Accordion -->
+        <a id="faqs"></a>
+        <section class="faq-accordion">
+            <!-- FAQ Section - Ali-->
+            <h2>FAQs</h2>
+            <div class="accordionContainer">
+                <!-- FAQ 1 -->
+                <button class="faq-question" title="Read answer">
+                    Does it cost anything to download the app?
+                </button>
+                <div class="faq-answer" title="Read answer">
+                    <p>No. The Investor app is absolutely FREE!</p>
+                </div>
+                <!-- FAQ 2 -->
+                <button class="faq-question" title="Read answer">
+                    Can I use the app on my tablet?
+                </button>
+                <div class="faq-answer">
+                    <p>Sure! The app is not only made for mobile phones but is also developed for tablet users.</p>
+                </div>
+                <!-- FAQ 3 -->
+                <button class="faq-question" title="Read answer">
+                    Will the app use my mobile data even when I'm not using it?
+                </button>
+                <div class="faq-answer">
+                    <p>Not necessarily. This is an option that can be turned ON/OFF depending on the time you would like to wait for the news to load up each time you open up the app. Leaving the background app data ON will significantly reduce the time for the app to display the results and will also allow to app to store a few articles for you to read in case you reach a location without internet coverage.</p>
+                </div>
+                <!-- FAQ 4 -->
+                <button class="faq-question" title="Read answer">
+                    Will the app take up a lot of my mobile phone's storage?
+                </button>
+                <div class="faq-answer">
+                    <p>No. The app is optimised to take up as less storage as possible. The app mainly focuses on showing you the news by using internet data on the spot and does not store any old news as files in your storage. We have implemented a self-cleaning mechanism which the app uses every day or week to clear its cache, depending on which setting you choose.</p>
+                </div>
+            </div>
+            <script>
+              toggleAccordion();
+            </script>
+        </section>
+        <!-- Download app section -->
+        <a id="download"></a>
+        <section class="download-container">
+            <div class="heading-container">
+                <h2>Download the Investor App</h2>
+                <p id="desktopDescription">Scan one of the QR codes below with your phone off your computer screen. Or if you like to inspect the app and read its reviews beforehand, click on one of the phone app store icons below.</p>
+                <p id="mobileDescription">To download the app, click on one of the phone app store icons below that suits you device.</p>
+            </div>
+            <div class="download-box ios">
+                <img src="images/app/ios-qr.png" alt="iOS QR code">
+                <h4>Scan the QR with your Iphone and download the App Store.</h4>
+            </div>
+            <div class="download-box android">
+                <img src="images/app/android-qr.png" alt="Android QR code">
+                <h4>Scan the QR with your Android phone and download the app from Google Play Store.</h4>
+            </div>
+            <div class="appstore">
+                <a href="https://www.apple.com/app-store/" target="_blank"  title="Go to Apple Store">
+                    <i class="fab fa-app-store-ios"></i>
+                </a>
+            </div>
+            <div class="googleplay">
+                <a href="https://play.google.com/store/apps" target="_blank" title="Go to GooglePlay Store">
+                    <i class="fab fa-google-play"></i>
+                </a>
+            </div>    
+        </section>
+    </div>
+    <!-- Wrapper Ends-->
+    <footer>
+        <div class="footerinner">
+            <!--Address of central office -->
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="subscription.html">Subscriptions</a>
+                    </li>
+                    <li>
+                        <a href="app.html">App</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="report.html" title="Read reflective report">Website report</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Contact info-->
+            <div class="footer-contact">
+                <ul>
+                    <li>
+                        <p><b>Email: </b><a href="mailto:someone@example.com" title="Get in touch">accountmanagement@investor.ac.uk</a></p>
+                    </li>
+                    <li>
+                        <p><b>Tel: </b><a href="tel:(+44)01-345-678-99" title="Get in touch">0123456789</a></p>
+                    </li>
+                    <li>
+                        <address>The Investor Building, 88 Brecknock Rd, Kentish Town, London N7 0DB, UK</address>
+                    </li>
+                </ul>
+            </div>
+            <!--Social Media links-->
+            <div class="footer-social">
+                <p>Would you like to be notified when a hot topic comes up?</p>
+                <p>Or check out our professional photographers' work?</p>
+                <p><b>Follow us on social media!</b></p>
+                <a href="https://www.facebook.com/investor/" target="_blank" title="Facebook page">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.twitter.com/investor" target="_blank" title="Twitter page">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/investor" target="_blank" title="LinkedIn page">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.reddit.com/investor" target="_blank" title="Reddit page">
+                    <i class="fab fa-reddit-square"></i>
+                </a>
+                <a href="https://www.pinterest.com/investor" target="_blank" title="Pinterest page">
+                    <i class="fab fa-pinterest-square"></i>
+                </a>
+                <a href="https://www.instagram.com/investor" target="_blank" title="Instagram page">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <!--Copyright text-->
+              <div class="copyright">
+                <p>&#169; 2021 WP0987</p>
+                <!--Copyright unicode html from https://www.compart.com/en/unicode/U+00A9 -->
+            </div>
+        </div> 
+    </footer>
+</body>   
+</html>

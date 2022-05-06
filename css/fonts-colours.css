@@ -1,0 +1,36 @@
+/* Fonts and Colours styles */
+    /* Font Family styles */
+        /* Import external fonts */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Gudea&family=Monoton&family=Questrial&display=swap');
+
+        /* Apply to Logo only */
+        .top-header h1, #logo h4 {
+            font-family: 'Monoton', cursive;
+        }
+
+        /* quote for testimonials */
+        #quote-carousel blockquote {
+            font-family: 'Gudea', sans-serif;
+        }
+
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        div[class*="news-box"] p {
+            font-family: 'Questrial', sans-serif;
+        }
+    /* End of Font Family styles */
+
+    /* CSS Variables */
+        :root {
+            --primary: #edf2fb;
+            --dark: #161a1d;
+            --light: #fff;
+            --shadow: 0 1px 5px rgba(104, 104,104, 0.8);
+            --cta: #720026;
+            --cta-hover: #5e015e;
+            --stickynav: #fafaf3dc;
+        }
+    /* End of CSS Vars */
+/* End of Fonts and Colours */
